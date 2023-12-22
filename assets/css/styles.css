@@ -1,0 +1,192 @@
+:root {
+
+
+    /*Basics*/
+    --white: #FFF;
+    --black: #111111;
+    --grey: hsl(0, 0%, 50%);
+    /*Primary*/
+
+    --Yellow: hsl(47, 88%, 63%);
+
+
+    /*Typo 600 800*/
+
+    --typoText: 'Figtree', sans-serif;
+
+    /*Utilities*/
+    --top: 2.5rem;
+
+}
+
+html {
+    font-size: 62.5%;
+    /* 1 rem -10px    */
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--typoText);
+    font-size: 1.6rem;
+    background-color: var(--Yellow);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--white);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20rem;
+    padding: 1.8rem;
+    border-radius: 2rem;
+
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+@media (min-width: 500px) {
+    .card {
+        margin: 0 auto;
+        margin-top: 20rem;
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
+    .card {
+        margin: 0 auto;
+        margin-top: 20rem;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card {
+        margin: 0 auto;
+        margin-top: 20rem;
+        width: 30%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card {
+        margin: 0 auto;
+        margin-top: 20rem;
+        width: 25%;
+    }
+}
+
+@media (min-width: 1440px) {
+
+
+
+    .card {
+        margin: 0 auto;
+        margin-top: 20rem;
+        width: 20%;
+    }
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+
+}
+
+
+.header__bg img {
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+
+.header__btn {
+    width: 30%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: var(--Yellow);
+    font-family: var(--typoText);
+    font-weight: 800;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+.header__small {
+    margin-top: 1rem;
+}
+
+
+/*Body*/
+
+
+
+.body__heading {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+
+.body__heading:hover {
+    color: var(--Yellow);
+}
+
+
+.body__text {
+    color: var(--grey);
+    text-align: left;
+
+}
+
+
+
+/*Footer*/
+
+
+.footer {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.footer__img {
+    height: 3rem
+}
